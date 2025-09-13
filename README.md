@@ -12,7 +12,7 @@ Welcome to my personal portfolio website, [maryqueenuch.online](https://maryquee
 
 ## 📌 About Me
 
-Hi, I'm Mary-Queen—a frontend developer with a flair for design and a love for building digital experiences that connect. I specialize in crafting responsive websites that are visually appealing, accessible, and performance-optimized. My work blends creativity with code, and this portfolio is a reflection of that synergy.
+Hi, I'm Mary-Queen, a Cloud & DevOps Engineeer with a flair for design and a love for building digital experiences that connect. I specialize in crafting responsive websites that are visually appealing, accessible, and performance-optimized. My work blends creativity with code, and this portfolio is a reflection of that synergy.
 
 ---
 
@@ -47,18 +47,18 @@ Hi, I'm Mary-Queen—a frontend developer with a flair for design and a love for
 
 ## 📁 Folder Structure
 
-portfolio/ 
-├── index.html 
-├── scss/ 
-│ └── bootstrap.scss 
-├── css/ 
-│ └── style.css 
-├── js/ 
-│ ├── main.js 
-│ └── aos.js 
-├── assets/ 
-│ └── images/ 
-├── README.md 
+portfolio/ <br>
+├── index.html <br>
+├── scss/ <br>
+│ └── bootstrap.scss <br>
+├── css/ <br>
+│ └── style.css <br>
+├── js/ <br>
+│ ├── main.js <br>
+│ └── aos.js <br>
+├── assets/ <br>
+│ └── images/ <br>
+├── README.md <br>
 └── LICENSE.txt
 
 ## 🌐 Hosting & Deployment
