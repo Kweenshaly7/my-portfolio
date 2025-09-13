@@ -94,8 +94,7 @@ I’m always open to collaboration, freelance opportunities, or just a friendly 
 
 ## 📄 License
 
-This project uses a free HTML template licensed by **HTML Codex** under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).  
-**Note:** Author credit must be retained as per license terms. For credit removal, visit [htmlcodex.com/credit-removal](https://htmlcodex.com/credit-removal).
+Template design inspired by HTML Codex. Licensed under CC BY 4.0.
 
 ---
 
@@ -108,13 +107,4 @@ This project uses a free HTML template licensed by **HTML Codex** under the [Cre
 - Improve accessibility and SEO  
 - Create a downloadable resume section
 
----
-
-## 🙌 Acknowledgments
-
-Thanks to:
-- [HTML Codex](https://htmlcodex.com) for the base template  
-- Open-source contributors for Bootstrap, AOS.js, Font Awesome, and jQuery  
-- AWS for providing robust infrastructure  
-- The developer community for continuous inspiration
 
