@@ -83,13 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
 `,
 
     projects: () => `
-<span class="neon-text">FLAGSHIP REPOSITORIES:</span>
-  1. <span class="neon-text">aws-three-tier-terraform-deploy</span> - Terraform EKS, RDS, VPC & ArgoCD
-  2. <span class="neon-text">cloud-vpc-simulator</span>             - Linux Namespaces & iptables CLI in Python
-  3. <span class="neon-text">docker-linux-lab</span>                - Container orchestration & daemon monitor
-  4. <span class="neon-text">prolaunch-cv-optimizer</span>          - Full-stack AI ATS CV optimizer platform
-  5. <span class="neon-text">alx-system_engineering-devops</span>   - Enterprise Bash automation & load balancing
-<span class="text-secondary">Run 'cat architecture.tf' or visit github.com/Kweenshaly7 for details.</span>
+<span class="neon-text">FLAGSHIP TECHNICAL REPOSITORIES & COLLABORATIONS:</span>
+  1. <span class="neon-text">promohub-scalable-web-platform</span>   [PromoHub-Org] Cloud High Availability & Auto-scale
+  2. <span class="neon-text">aws-three-tier-terraform-deploy</span>  [Personal] Terraform EKS, RDS Multi-AZ & ArgoCD
+  3. <span class="neon-text">cloud-vpc-simulator</span>              [Personal] Python Linux Namespaces & iptables NAT
+  4. <span class="neon-text">prolaunch-cv-optimizer</span>           [Personal] Full-Stack AI ATS CV Optimizer Platform
+  5. <span class="neon-text">docker-linux-lab</span>                 [Personal] Container Orchestration & Daemon Monitor
+  6. <span class="neon-text">alx-system_engineering-devops</span>    [Personal] HAProxy Load Balancing & SSL Automation
+  7. <span class="neon-text">ptech-web</span>                       [ProLaunch-Group] Cloud Infrastructure & Services Portal
+  8. <span class="neon-text">pacad-landing</span>                   [ProLaunch-Group] Interactive EdTech Curriculum Platform
+  9. <span class="neon-text">pcareers-landing-page</span>           [ProLaunch-Group] Digital Career Acceleration Pipeline
+ 10. <span class="neon-text">pgroup-website</span>                 [ProLaunch-Group] Central Unified Organization Portal
+<span class="text-secondary">Run 'cat architecture.tf', 'vpcctl --demo', or inspect code cards below.</span>
 `,
 
     whoami: () => `

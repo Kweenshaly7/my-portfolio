@@ -15,7 +15,7 @@
 - **Accent Colour**: Signature **Neon Green (`#2CFF05`)** used across CTAs, stats, step indicators, and terminal prompts.
 - **Dual Discipline**: Synthesizes deep technical engineering (AWS, Terraform, Kubernetes EKS, Docker, Linux networking) with executive operational leadership (scaling 0 to 50k+ members at Afriment, ₦5M+ ARR, GTM supply chains).
 - **Interactive Cloud Terminal**: Built-in CLI console simulator (`mq@cloud-ops:~$`) supporting live commands (`cat architecture.tf`, `status`, `vpcctl --demo`, `skills`, `projects`).
-- **Verified GitHub Projects**: Direct showcases for Terraform 3-tier EKS deployments, Python Linux network namespace VPC simulator, Docker Linux lab, LaunchIQ ATS CV optimizer, and ALX system engineering repositories.
+- **10 Featured Technical Repositories**: Direct showcases for PromoHub Scalable Cloud Platform (`PromoHub-Org`), AWS Terraform 3-tier EKS deployments, Python Linux network namespace VPC simulator (`vpcctl`), Docker Linux lab, LaunchIQ ATS CV optimizer, ALX system engineering, and ProLaunch Group platforms (`ptech-web`, `pacad-landing`, `pcareers-landing-page`, `pgroup-website`).
 - **Client & Executive Endorsements**: Preserved testimonials from leadership at NYKON, AFRIMENT, and IT specialists.
 - **Google Appointment Booking**: Integrated scheduling modal for 1:1 strategy consultations and cloud advisory.
 
