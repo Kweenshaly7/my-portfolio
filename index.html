@@ -1,777 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Mary-Queen Uchechukwu - Cloud & DevOps Engineer | Founder, ProLaunch Group</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary-Queen Uchechukwu | Cloud/DevOps Engineer & Business Operations Leader</title>
+  <meta name="description" content="Official portfolio of Mary-Queen Uchechukwu. Cloud & DevOps Engineer, Systems Strategist, and Business Operations Leader architecting scalable, resilient solutions for SaaS, FinTech, and Manufacturing ecosystems.">
+  <meta name="keywords" content="Mary-Queen Uchechukwu, Coach MQ, Cloud Engineer, DevOps Engineer, AWS, Terraform, Docker, Kubernetes, Business Operations, Afriment, ProLaunch Group">
+  <meta name="author" content="Mary-Queen Uchechukwu">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mary-Queen Uchechukwu | Cloud/DevOps Engineer & Business Operations Leader">
+  <meta property="og:description" content="Bridging user experience, infrastructure, and operational scale. Over a decade operating at the intersection of digital infrastructure and human systems.">
+  <meta property="og:image" content="assets/img/new-profile.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@kweenshaly">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+  <!-- SVG Favicon with Brand Accent -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23080B10'/><text x='50%' y='62%' font-family='sans-serif' font-weight='800' font-size='46' fill='%232CFF05' text-anchor='middle'>MQ</text></svg>">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+  <!-- ==========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span>MQ<span class="neon-text">.cloud</span>_</span>
+        <span class="brand-badge">DEVOPS & OPS</span>
+      </a>
 
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#philosophy" class="nav-link">Dual Philosophy</a></li>
+        <li><a href="#terminal" class="nav-link">Cloud Console</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">My Portfolio</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+      <div class="nav-actions">
+        <button class="btn btn-outline-neon btn-sm open-booking-modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Book 1:1
         </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#philosophy" class="nav-link">Dual Philosophy</a>
+    <a href="#terminal" class="nav-link">Cloud Console</a>
+    <a href="#projects" class="nav-link">Featured Projects</a>
+    <a href="#skills" class="nav-link">Technical Toolchain</a>
+    <a href="#experience" class="nav-link">Career Journey</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#contact" class="nav-link">Contact & Book</a>
+    <button class="btn btn-primary open-booking-modal" style="margin-top: 16px;">Schedule Google Appointment</button>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-status">
+          <span class="pulse-dot"></span>
+          <span>Available for Cloud Architecture & Operations Leadership</span>
+        </div>
+
+        <h1 class="hero-title">
+          Bridging User Experience, <span class="neon-text neon-glow">Infrastructure</span>, and Operational Scale.
+        </h1>
+
+        <p class="hero-subtitle">
+          I am a <strong>Cloud & DevOps Engineer</strong> and <strong>Business Operations Leader</strong> architecting 
+          scalable, resilient environments for SaaS, FinTech, and Manufacturing ecosystems. Rather than treating technical 
+          infrastructure and organizational execution as separate silos, I build end-to-end pipelines that ensure high 
+          throughput, zero defects, and sustained growth.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore Architecture Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button class="btn btn-secondary open-booking-modal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Book Strategy Session
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">99.9%</span>
+            <span class="stat-label">Target Uptime & Cloud High Availability</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">50,000+</span>
+            <span class="stat-label">Community Scaled at Afriment</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Years Operational Systems Leadership</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">₦35M+</span>
+            <span class="stat-label">Recurring Revenue Generated</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card-wrapper">
+          <div class="profile-backdrop-glow"></div>
+          <div class="profile-frame">
+            <img src="assets/img/new-profile.png" alt="Mary-Queen Uchechukwu" class="profile-img" priority>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top">
+            <div class="badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m16 16-4-4-4 4"></path></svg>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">Portfolio</h1>
+            <div class="badge-content">
+              <h5>AWS & Terraform IaC</h5>
+              <span>EKS • VPC • Multi-AZ</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <div class="badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="badge-content">
+              <h5>Operations Lead & COO</h5>
+              <span>Afriment • Nykon • ProLaunch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       INTERACTIVE DEVOPS CLOUD TERMINAL
+       ========================================================================== -->
+  <section class="section terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// INTERACTIVE ENVIRONMENT</div>
+        <h2 class="section-title">Live Cloud Ops Terminal</h2>
+        <p class="section-subtitle">
+          Recruiters, engineering managers, and clients can interact directly with simulated production tooling, inspect Infrastructure as Code, or verify cloud metrics.
+        </p>
+      </div>
+
+      <div class="terminal-box">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">maryqueen@cloud-ops: ~ (bash 5.2)</div>
+          <div class="terminal-quick-chips">
+            <button class="chip-btn" data-cmd="help">help</button>
+            <button class="chip-btn" data-cmd="cat architecture.tf">cat architecture.tf</button>
+            <button class="chip-btn" data-cmd="vpcctl --demo">vpcctl --demo</button>
+            <button class="chip-cmd chip-btn" data-cmd="status">status</button>
+            <button class="chip-btn" data-cmd="skills">skills</button>
+            <button class="chip-btn" data-cmd="projects">projects</button>
+            <button class="chip-btn" data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-output" id="terminalOutput">
+<span class="neon-text">====================================================================
+MARY-QUEEN UCHECHUKWU | CLOUD & OPERATIONS TERMINAL v2.4
+Connected to AWS us-east-1 // Terraform IaC Provider Active
+Type <span class="neon-text neon-underline">help</span> or click any command chip above to start.
+====================================================================</span>
+          </div>
+          <div class="terminal-prompt-line">
+            <span class="prompt-symbol">mq@cloud-ops:~$</span>
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Type a command (e.g. status, cat architecture.tf, help)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       THE DUAL-DISCIPLINE PHILOSOPHY
+       ========================================================================== -->
+  <section class="section" id="philosophy">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// THE CORE ADVANTAGE</div>
+        <h2 class="section-title">The Dual-Discipline Bridge</h2>
+        <p class="section-subtitle">
+          "Most leaders view physical production, cloud engineering, and organizational operations as separate disciplines. I view them as the exact same discipline applied to different media."
+        </p>
+      </div>
+
+      <div class="philosophy-grid">
+        <!-- Pillar 1 -->
+        <div class="pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><line x1="8" y1="19" x2="16" y2="19"></line><line x1="12" y1="15" x2="12" y2="23"></line></svg>
+            </div>
+            <div>
+              <div class="pillar-tagline">DIGITAL SYSTEMS & CLOUD</div>
+              <h3 class="pillar-title">Cloud Infrastructure & DevOps</h3>
+            </div>
+          </div>
+          <p class="pillar-desc">
+            Bridging the gap between software delivery velocity and bottom-line infrastructure viability through modular, reproducible architectures.
+          </p>
+          <ul class="pillar-points">
+            <li class="pillar-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Infrastructure as Code:</strong> Modular, version-controlled AWS topologies using Terraform and automated GitHub Actions pipelines.</span>
+            </li>
+            <li class="pillar-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Container Orchestration:</strong> Resilient Docker microservices deployed on Amazon EKS with ArgoCD GitOps workflows.</span>
+            </li>
+            <li class="pillar-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>FinOps & Reliability:</strong> Proactive CloudWatch monitoring, least-privilege IAM policies, and cost-governance to eliminate runaway spend.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div>
+              <div class="pillar-tagline">HUMAN SYSTEMS & SCALE</div>
+              <h3 class="pillar-title">Business Operations Leadership</h3>
+            </div>
+          </div>
+          <p class="pillar-desc">
+            Treating human workflows, community acceleration, and operational execution with the same systematic rigor as distributed systems.
+          </p>
+          <ul class="pillar-points">
+            <li class="pillar-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Hyper-Scale Community Ops:</strong> Scaled Afriment from 0 to 50,000+ members in under 24 months with a lean, asynchronous operational team.</span>
+            </li>
+            <li class="pillar-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Commercial Execution & GTM:</strong> Generated over ₦5M in recurring revenue and managed outsourced manufacturing and GTM fulfillment.</span>
+            </li>
+            <li class="pillar-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Workforce Acceleration:</strong> Founded ProLaunch Careers and designed the 10-session Career Grooming Camp to produce offer-ready digital talent.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- High-Contrast Light Neutral Executive Banner -->
+      <div class="contrast-banner">
+        <div>
+          <h3>The Transformation Framework</h3>
+          <p>
+            Moving technical teams and professionals seamlessly through: 
+            <strong>Confusion → Clarity → Learning → Practical Application → Sustainable Growth.</strong>
+          </p>
+        </div>
+        <div>
+          <button class="btn btn-dark open-booking-modal">
+            Schedule Strategic Advisory
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED PROJECTS SECTION
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// PRODUCTION ARCHITECTURES & LABS</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Real-world cloud architectures, systems simulation tooling, container environments, and full-stack operational platforms built or collaborated on.
+        </p>
+      </div>
+
+      <!-- Project Filters -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects (9)</button>
+        <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+        <button class="filter-btn" data-filter="ai">AI & Full-Stack</button>
+        <button class="filter-btn" data-filter="security">Security & Systems</button>
+        <button class="filter-btn" data-filter="ops">Business Operations</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- 1. AWS Three-Tier Terraform Deployment -->
+        <div class="project-card" data-category="cloud">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text">// terraform-eks-db</span>
+              <span>module "vpc" { cidr = "10.0.0.0/16" }</span>
+              <span>module "eks" { cluster = "prod-eks" }</span>
+              <span>module "rds" { engine = "postgres" }</span>
+            </div>
+            <span class="project-badge-top">Terraform IaC</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AWS Three-Tier Terraform Deployment</h3>
+            <p class="project-desc">
+              Production-grade Infrastructure as Code (IaC) provisioning an isolated AWS VPC, Amazon EKS (Kubernetes) cluster, RDS Multi-AZ database, and Route53 DNS, fully automated with GitHub Actions CI/CD.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">Terraform (HCL)</span>
+              <span class="tag-pill">AWS EKS</span>
+              <span class="tag-pill">RDS Multi-AZ</span>
+              <span class="tag-pill">ArgoCD</span>
+              <span class="tag-pill">GitHub Actions</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Kweenshaly7/aws-three-tier-terraform-deploy" target="_blank" class="project-link-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#IaC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Cloud VPC Simulator -->
+        <div class="project-card" data-category="cloud security">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text"># vpcctl.py (Linux NetNS)</span>
+              <span>$ sudo ./vpcctl.py create --cidr 10.10.0.0/16</span>
+              <span>$ sudo iptables -t nat -A POSTROUTING ...</span>
+              <span class="neon-text">✓ Isolated Namespace Verified</span>
+            </div>
+            <span class="project-badge-top">Linux Primitives</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Cloud VPC Simulator (vpcctl)</h3>
+            <p class="project-desc">
+              Built a CLI tool simulating core AWS VPC functionalities locally using Linux kernel primitives: network namespaces, virtual ethernet (veth) pairs, iptables NAT, VPC Peering, and Security Groups in Python.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">Python 3</span>
+              <span class="tag-pill">Linux NetNS</span>
+              <span class="tag-pill">iptables NAT</span>
+              <span class="tag-pill">VPC Peering</span>
+              <span class="tag-pill">VETH Bridges</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Kweenshaly7/cloud-vpc-simulator" target="_blank" class="project-link-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#Networking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. LaunchIQ - AI Career Platform & CV Optimizer -->
+        <div class="project-card" data-category="ai cloud">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text">// LaunchIQ ATS AI Engine</span>
+              <span>POST /api/optimize-cv HTTP/1.1</span>
+              <span>Docker Multi-Stage Build &bull; Railway CD</span>
+              <span>Supabase / Prisma PostgreSQL</span>
+            </div>
+            <span class="project-badge-top">AI Full-Stack</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">LaunchIQ — AI ATS CV Optimizer</h3>
+            <p class="project-desc">
+              Engineered end-to-end DevOps and application infrastructure for an AI-powered resume optimization tool: Express server, multi-stage Docker builds, GitHub Actions, Railway deployment, and Prisma PostgreSQL migration.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">Docker</span>
+              <span class="tag-pill">Node.js / Express</span>
+              <span class="tag-pill">AI ATS Parsing</span>
+              <span class="tag-pill">PostgreSQL</span>
+              <span class="tag-pill">GitHub Actions</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Kweenshaly7/prolaunch-cv-optimizer" target="_blank" class="project-link-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#AI-DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Docker & Linux Systems Lab -->
+        <div class="project-card" data-category="cloud security">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text">$ docker stats --all</span>
+              <span>CONTAINER ID   NAME     CPU %   MEM USAGE</span>
+              <span>a1b2c3d4e5f6   nginx    0.05%   14.2MiB</span>
+              <span class="neon-text">Container Isolation & Monitoring Lab</span>
+            </div>
+            <span class="project-badge-top">Containers</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Docker & Linux Infrastructure Lab</h3>
+            <p class="project-desc">
+              Containerization workflows and kernel resource monitoring: multi-tier application packaging, custom container metrics extraction, Nginx reverse proxy configuration, and safe process termination pipelines.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">Docker</span>
+              <span class="tag-pill">Linux Kernel</span>
+              <span class="tag-pill">Nginx Proxy</span>
+              <span class="tag-pill">Resource Metrics</span>
+              <span class="tag-pill">Bash</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Kweenshaly7/docker-linux-lab" target="_blank" class="project-link-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. AWS IAM Role-Based Access Control -->
+        <div class="project-card" data-category="security cloud">
+          <div class="project-media">
+            <img src="assets/img/projects/project-1.jpg" alt="AWS IAM RBAC">
+            <span class="project-badge-top">Security & IAM</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AWS IAM Role-Based Access Control (RBAC)</h3>
+            <p class="project-desc">
+              Architected least-privilege enterprise IAM policy matrices, boundary permissions, and audit trails to prevent credential escalation, enforce compliance, and reduce attack surfaces across multi-account AWS environments.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">AWS IAM</span>
+              <span class="tag-pill">Least Privilege</span>
+              <span class="tag-pill">JSON Policies</span>
+              <span class="tag-pill">CloudTrail</span>
+              <span class="tag-pill">Compliance</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://tinyurl.com/pod6project1" target="_blank" class="project-link-btn">
+                <span>View Security Spec</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#SecOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Operation Cloud Mirage -->
+        <div class="project-card" data-category="security cloud">
+          <div class="project-media">
+            <img src="assets/img/projects/project-2.jpg" alt="Operation Cloud Mirage">
+            <span class="project-badge-top">Threat Analysis</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Operation Cloud Mirage: Threat Simulation</h3>
+            <p class="project-desc">
+              Comprehensive threat analysis and vulnerability simulation on cloud environments. Modeled attack vectors against AWS infrastructure, designed automated detection alarms, and built remediation runbooks.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">AWS Security</span>
+              <span class="tag-pill">Threat Simulation</span>
+              <span class="tag-pill">Incident Runbooks</span>
+              <span class="tag-pill">CloudWatch</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-link-btn" style="cursor: default;">Internal Research Lab</span>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#ThreatIntel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. ALX System Engineering & DevOps Automation -->
+        <div class="project-card" data-category="cloud security">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text">#!/usr/bin/env bash</span>
+              <span># Automated HAProxy SSL load balancing</span>
+              <span>apt-get update && apt-get -y install haproxy</span>
+              <span class="neon-text">Automated Server Health Check: 200 OK</span>
+            </div>
+            <span class="project-badge-top">Systems & Bash</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Systems Engineering & Server Automation</h3>
+            <p class="project-desc">
+              Extensive enterprise Linux automation repository: HAProxy load balancing with SSL termination, automated Nginx deployment, server health checks, log rotation, and network debugging scripts.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">Bash Scripting</span>
+              <span class="tag-pill">HAProxy</span>
+              <span class="tag-pill">SSL/TLS</span>
+              <span class="tag-pill">Linux Systems</span>
+              <span class="tag-pill">Networking</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Kweenshaly7/alx-system_engineering-devops" target="_blank" class="project-link-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. ProLaunch Technologies Ops Hub -->
+        <div class="project-card" data-category="ai ops">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text">// ProLaunch Ecosystem Portal</span>
+              <span>Tailwind CSS &bull; PostCSS &bull; JavaScript</span>
+              <span>Cloud Services &bull; Workforce Academy</span>
+            </div>
+            <span class="project-badge-top">Platform Ops</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ProLaunch Technologies Ops Hub</h3>
+            <p class="project-desc">
+              Designed and built the multi-page digital ecosystem for ProLaunch Group, showcasing cloud services, career acceleration programs, and workforce development modules with responsive modern UX.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">JavaScript</span>
+              <span class="tag-pill">Tailwind CSS</span>
+              <span class="tag-pill">PostCSS</span>
+              <span class="tag-pill">Web Architecture</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Kweenshaly7/prolaunch-site" target="_blank" class="project-link-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#WebPlatform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Voyage Game (Wonorbit) Strategy & Operations -->
+        <div class="project-card" data-category="ops">
+          <div class="project-media">
+            <div class="project-code-art">
+              <span class="neon-text">WONORBIT / VOYAGE GAME</span>
+              <span>Manufacturing &bull; Logistics &bull; Supply Chain</span>
+              <span>GTM Strategy &bull; Claude Business Project</span>
+            </div>
+            <span class="project-badge-top">Operations</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Wonorbit (Voyage Game) Commercial GTM</h3>
+            <p class="project-desc">
+              Directed the full commercial and operational lifecycle: managed outsourced manufacturing partners, streamlined fulfillment logistics, steered GTM execution, and set up automated AI business workflows.
+            </p>
+            <div class="project-tags">
+              <span class="tag-pill">Supply Chain</span>
+              <span class="tag-pill">GTM Logistics</span>
+              <span class="tag-pill">Manufacturing</span>
+              <span class="tag-pill">Process Audits</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-link-btn" style="cursor: default;">Commercial Leadership</span>
+              <span class="mono neon-text" style="font-size: 0.78rem;">#Operations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECHNICAL COMPETENCY MATRIX
+       ========================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// SKILLS & TOOLCHAIN</div>
+        <h2 class="section-title">Technical & Operational Competencies</h2>
+        <p class="section-subtitle">
+          A battle-tested stack spanning cloud infrastructure, automation pipelines, systems administration, and executive business operations.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Cloud & IaC -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">☁️</div>
+            <h3 class="skill-cat-title">Cloud & IaC</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill highlight">AWS (EC2, VPC, S3)</span>
+            <span class="skill-pill highlight">Terraform (HCL)</span>
+            <span class="skill-pill">Amazon EKS</span>
+            <span class="skill-pill">Amazon RDS</span>
+            <span class="skill-pill">AWS IAM / RBAC</span>
+            <span class="skill-pill">Route 53 & DNS</span>
+            <span class="skill-pill">CloudWatch</span>
+            <span class="skill-pill">FinOps & Cost Control</span>
+          </div>
+        </div>
+
+        <!-- DevOps & CI/CD -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⚡</div>
+            <h3 class="skill-cat-title">DevOps & CI/CD</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill highlight">GitHub Actions</span>
+            <span class="skill-pill highlight">Docker & Compose</span>
+            <span class="skill-pill">Kubernetes</span>
+            <span class="skill-pill">ArgoCD (GitOps)</span>
+            <span class="skill-pill">CI/CD Pipelines</span>
+            <span class="skill-pill">Nginx & HAProxy</span>
+            <span class="skill-pill">SSL/TLS Termination</span>
+            <span class="skill-pill">Railway / CloudFront</span>
+          </div>
+        </div>
+
+        <!-- Systems & Languages -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💻</div>
+            <h3 class="skill-cat-title">Systems & Code</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill highlight">Linux (Ubuntu)</span>
+            <span class="skill-pill highlight">Bash Scripting</span>
+            <span class="skill-pill">Python 3</span>
+            <span class="skill-pill">C (Memory & Data Structures)</span>
+            <span class="skill-pill">Network Namespaces</span>
+            <span class="skill-pill">iptables & Routing</span>
+            <span class="skill-pill">JavaScript / Node.js</span>
+            <span class="skill-pill">SQL & PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Business & Operations -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">📈</div>
+            <h3 class="skill-cat-title">Operations Leadership</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill highlight">Scaling (0 to 50k+)</span>
+            <span class="skill-pill highlight">Asynchronous Workflows</span>
+            <span class="skill-pill">GTM & Logistics</span>
+            <span class="skill-pill">Quality Control Systems</span>
+            <span class="skill-pill">Executive Advisory</span>
+            <span class="skill-pill">Cross-functional Team Lead</span>
+            <span class="skill-pill">Career Coaching</span>
+            <span class="skill-pill">Vendor Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CAREER & LEADERSHIP TIMELINE
+       ========================================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// PROFESSIONAL TRAJECTORY</div>
+        <h2 class="section-title">Experience & Leadership Journey</h2>
+        <p class="section-subtitle">
+          Over a decade of progressive impact spanning digital engineering, operational leadership, and community growth.
+        </p>
+      </div>
+
+      <div class="timeline-wrap">
+
+        <!-- ProLaunch Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Cloud Operations Engineer & DevOps Lead</h3>
+                <span class="timeline-company">ProLaunch Technologies</span>
+              </div>
+              <span class="timeline-period">June 2026 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Design and provision modular, reproducible cloud environments using Terraform, AWS (EC2, VPC, EKS, RDS, S3), Docker, and GitHub Actions CI/CD pipelines.</li>
+              <li>Enforce automated monitoring, incident prevention, and FinOps cost governance so platforms scale securely without runaway cloud spend or outages.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ProLaunch Group -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Founder & Lead Career Coach</h3>
+                <span class="timeline-company">ProLaunch Group (Careers, Technologies, Academy)</span>
+              </div>
+              <span class="timeline-period">October 2025 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built multi-brand tech and talent ecosystem encompassing cloud infrastructure, digital skills academy, and talent acceleration.</li>
+              <li>Founded the Career Grooming Camp: a 2-week structured online program delivering identity resets, CV optimization, and 30-60-90 career action plans.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Afriment -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Head of Operations & Senior Team Lead</h3>
+                <span class="timeline-company">Afriment</span>
+              </div>
+              <span class="timeline-period">September 2024 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Scaled community operations from zero to 50,000+ members in under 24 months by designing onboarding infrastructure and asynchronous workflows.</li>
+              <li>Led a distributed remote team of support reps and program admins handling thousands of member queries and mentorship interactions weekly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NYKON -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Chief Operating Officer (COO)</h3>
+                <span class="timeline-company">NYKON (SaaS)</span>
+              </div>
+              <span class="timeline-period">April 2026 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Direct company operational structure, aligning engineering velocity with sustainable unit economics and business milestones.</li>
+              <li>Oversee technical operations and client delivery processes across high-availability SaaS infrastructure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- VODERTECH -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">DevOps Engineer</h3>
+                <span class="timeline-company">VODERTECH (Germany)</span>
+              </div>
+              <span class="timeline-period">December 2025 — March 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Provisioned and managed AWS infrastructure (EC2, VPC, RDS, ELB) using Terraform, reducing manual configuration time.</li>
+              <li>Containerized multi-tier workloads with Docker and orchestrated deployments on Amazon EKS for enhanced horizontal reliability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Excalet Integrated Services -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Co-Founder & Director of Operations</h3>
+                <span class="timeline-company">Excalet Integrated Services</span>
+              </div>
+              <span class="timeline-period">July 2019 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Generated over ₦5M in recurring revenue through structured outbound campaigns and service optimization.</li>
+              <li>Optimized on-site service logistics and technical maintenance protocols, boosting client retention by 25%.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRESERVED CLIENT & EXECUTIVE TESTIMONIALS
+       ========================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// ENDORSEMENTS & SOCIAL PROOF</div>
+        <h2 class="section-title">What Leaders Say</h2>
+        <p class="section-subtitle">
+          Trusted by CEOs, Senior Engineers, and technical peers across SaaS, employment acceleration, and cloud operations.
+        </p>
+      </div>
+
+      <!-- Testimonials Dynamic Grid (Expandable via JS or HTML) -->
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <!-- Testimonial 1: Emmanuel Ahman (NYKON) -->
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            I recommend Mary-Queen for any Cloud engineering position at your business. She has led teams and, along with that, brings an energy and dependability that make her crucial to our joint venture. She did an excellent job of staying up to date on software developments and thus finding new solutions. She had the most extensive and diverse knowledge of software at our venture, and others even sought her out for advice. A reliable and highly capable employee, I can’t recommend her highly enough.
+          </p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/testimonial-1.jpg" alt="Emmanuel Ahman" class="author-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Emmanuel+Ahman&background=2CFF05&color=080B10'">
+            <div class="author-info">
+              <h5>Emmanuel Ahman</h5>
+              <span>CEO & Lead Software Engineer, NYKON</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2: Daniel Ayeni (AFRIMENT) -->
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            It’s always a pleasure working with Mary-Queen. Her exceptional organisational skills, coupled with a keen eye for detail, ensure every task is handled with precision. Whether managing communications, streamlining administrative processes, or handling DevOps projects. Mary-Queen consistently delivers above expectations. Her adaptability and professionalism are second to none. I strongly recommend her.
+          </p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/testimonial-2.jpg" alt="Daniel Ayeni" class="author-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Daniel+Ayeni&background=2CFF05&color=080B10'">
+            <div class="author-info">
+              <h5>Daniel Ayeni</h5>
+              <span>CEO & Senior Software Engineer, AFRIMENT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3: Chioma Obieze -->
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            I've had the pleasure of working alongside Mary-Queen and have consistently been impressed by her deep passion for technology and innovation. Whether it's the latest tools, frameworks, or industry trends, Mary-Queen is always ahead of the curve and eager to share insights with the team. Her enthusiasm is contagious and often inspires others to explore new approaches and solutions. Beyond just being a tech enthusiast, she is also a fantastic collaborator, always willing to jump in, solve complex problems, and support team members whenever needed. It's rare to find someone who combines technical curiosity with such a positive, team-first attitude. Any team would be lucky to have Mary Queen on board.
+          </p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/testimonial-3.jpg" alt="Chioma Obieze" class="author-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Chioma+Obieze&background=2CFF05&color=080B10'">
+            <div class="author-info">
+              <h5>Chioma Obieze</h5>
+              <span>Customer / IT Support Specialist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       THOUGHT LEADERSHIP, BOOKS & MENTORSHIP
+       ========================================================================== -->
+  <section class="section" id="leadership">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// AUTHOR & MENTOR</div>
+        <h2 class="section-title">Thought Leadership & Mentorship</h2>
+        <p class="section-subtitle">
+          Committed to democratizing technology and coaching early-to-mid career professionals into high-impact digital careers.
+        </p>
+      </div>
+
+      <div class="leadership-grid">
+        <!-- Featured Book -->
+        <div class="feature-box">
+          <div class="book-card">
+            <div class="book-cover">
+              <span class="neon-text" style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px;">Published Guide</span>
+              <div class="book-title" style="margin: 8px 0;">The Silent Career Killers Nobody Talks About</div>
+              <span class="book-author">By Coach MQ</span>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 8px;">The Silent Career Killers Nobody Talks About</h3>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 16px;">
+                An actionable blueprint addressing the invisible barriers remote professionals face: weak digital visibility, generic CV positioning, and poorly packaged skills, backed by a 90-day execution framework.
+              </p>
+              <button class="btn btn-outline-neon btn-sm open-booking-modal">
+                Request Book / Career Audit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mentorship Impact -->
+        <div class="feature-box">
+          <div style="margin-bottom: 16px;">
+            <div class="pillar-tagline" style="margin-bottom: 6px;">GLOBAL MENTORSHIP</div>
+            <h3 style="font-size: 1.25rem;">Global Mentorship Initiative & ProLaunch Camp</h3>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 20px;">
+            Active Global Mentor at GMI and founder of the live monthly Career Grooming Camp. Guiding career switchers and tech students across Africa and globally from confusion to employment readiness through practical application.
+          </p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <span class="skill-pill highlight">GMI Global Mentor</span>
+            <span class="skill-pill highlight">1:1 Strategy Sessions</span>
+            <span class="skill-pill highlight">Interview Frameworks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT & BOOKING SECTION
+       ========================================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// GET IN TOUCH</div>
+        <h2 class="section-title">Let’s Build Resilient Systems Together</h2>
+        <p class="section-subtitle">
+          Whether you need scalable AWS infrastructure, DevOps CI/CD pipeline automation, operational scaling advisory, or 1:1 career coaching.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 24px;">Direct Channels</h3>
+
+          <div class="contact-method">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Primary Email</span>
+              <h5>maryqueen.cloud@gmail.com</h5>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Phone / WhatsApp</span>
+              <h5>+234 901 798 3507</h5>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Location / Availability</span>
+              <h5>Nigeria (Remote Worldwide)</h5>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
+            <button class="btn btn-primary open-booking-modal" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Open Google Appointment Schedule
+            </button>
+          </div>
+
+          <div class="social-links-row">
+            <a href="https://www.linkedin.com/in/coach-mq" target="_blank" class="social-circle-btn" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-            <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
-                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
+            <a href="https://github.com/Kweenshaly7" target="_blank" class="social-circle-btn" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://x.com/kweenshaly" target="_blank" class="social-circle-btn" title="X / Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <button class="social-circle-btn copy-email-btn" data-email="maryqueen.cloud@gmail.com" title="Copy Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </div>
         </div>
-    </nav>
-    <!-- Navbar End -->
 
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Mary-Queen Uchechukwu</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Cloud & DevOps Engineer, Operations Lead, Career Grooming Coach</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="#project" class="btn btn-primary py-3 px-4 me-5">View My Projects</a>
-                        <!-- data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal" -->
-                        <button type="button" class="btn-play" data-bs-toggle="modal">
-                            <span></span>
-                        </button>
-                        <a class="ms-4 mb-0 d-none d-sm-block h5" href="https://form.typeform.com/to/tjF3PEjZ" target="_blank">Contact Me</a>
-                        <!-- h5 class="ms-4 mb-0 d-none d-sm-block">Contact Me</h5 -->
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="img/profile.png" alt="">
-                </div>
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Send a Direct Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex Johnson" required>
             </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="alex@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject / Area of Interest</label>
+              <input type="text" id="subject" class="form-input" placeholder="Cloud Architecture, DevOps, Operations Advisory, or 1:1 Coaching" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="4" class="form-textarea" placeholder="Tell me about your project, infrastructure challenges, or goals..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message Directly
+            </button>
+            <div id="formStatus" style="margin-top: 14px; font-size: 0.88rem;"></div>
+          </form>
         </div>
+      </div>
     </div>
-    <!-- Header End -->
+  </section>
 
+  <!-- ==========================================================================
+       GOOGLE APPOINTMENT BOOKING MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div style="margin-bottom: 20px;">
+        <span class="section-tag" style="margin-bottom: 8px;">GOOGLE APPOINTMENT SCHEDULE</span>
+        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Book a 1:1 Consultation</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Schedule an executive session with Mary-Queen Uchechukwu directly on Google Calendar.
+        </p>
+      </div>
 
-    <!-- Video Modal Start -->
-    <!--
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px; margin-bottom: 24px;">
+        <h5 style="color: var(--accent-neon); margin-bottom: 8px; font-size: 0.95rem;">Appointment Details:</h5>
+        <ul style="color: var(--text-secondary); font-size: 0.88rem; list-style: none; display: flex; flex-direction: column; gap: 8px;">
+          <li>• <strong>Duration:</strong> 30 min or 60 min session</li>
+          <li>• <strong>Topics:</strong> Cloud Architecture, Terraform Review, DevOps CI/CD, Operational Strategy, or Career Coaching</li>
+          <li>• <strong>Platform:</strong> Google Meet (automatic calendar invite sent upon booking)</li>
+        </ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <!-- Primary Google Calendar Button -->
+        <a href="https://calendar.google.com" target="_blank" class="btn btn-primary" id="googleCalBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Open Google Appointment Booking Page
+        </a>
+        <a href="mailto:maryqueen.cloud@gmail.com?subject=Schedule%20Consultation%20with%20Mary-Queen" class="btn btn-secondary">
+          Request Custom Meeting Time via Email
+        </a>
+      </div>
     </div>
-    -->
-    <!-- Video Modal End -->
+  </div>
 
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="brand-logo">
+          <span>MQ<span class="neon-text">.cloud</span>_</span>
+        </a>
 
-    <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">About</h1>
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">10+</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">Building secure, scalable cloud infrastructure while leading operations across a multi-brand technology and career-development group, driven by a passion for problem-solving and continuous learning.</h3>
-                    </div>
-                    <p class="mb-4">Cloud & DevOps Engineer by primary path, and Founder of ProLaunch Group — spanning ProLaunch Technologies (cloud & DevOps services), ProLaunch Careers (career grooming for early career professionals), and ProLaunch Academy (Digital Tech Training).</p>
-                    <p class="mb-4">Also serves as Head of Operations at Afriment, NYKON, and Voyage Game — bringing over a decade of experience across customer support, quality control, and large-scale operations management into cloud infrastructure and DevOps workflows.</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Reliable</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Innovative</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Strategic</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="Profile Photo">
-                        </div>
-                        <!--
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="TBA">
-                        </div>
-                        -->
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Core Highlights:</h5>
-                        <!--<h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>-->
-                    </div>
-                    <ul class="mb-4">
-                        <li>AWS Cloud Infrastructure & Docker Containerization</li>
-                        <li>DevOps, CI/CD Automation, Infrastructure as Code</li>
-                        <li>Multi-Brand Operations & Team Leadership</li>
-                        <li>Career Coaching & Technical Instruction</li>
-                        <li>Problem Solving, Communication, Cross-Functional Collaboration</li>
-                    </ul>
-                        <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">5</h2>
-                    </div>
-                    <p class="mb-0">Each project I undertake reflects my meticulous approach to problem-solving and innovation. 
-                        My works demonstrate my ability to design, implement, and secure cloud-based solutions.</p>
-                </div>
-            </div>
+        <div class="footer-status-pill">
+          <span class="pulse-dot"></span>
+          <span>All Systems Operational &bull; 99.9% Cloud Target</span>
         </div>
-    </div>
-    <!-- About End -->
+      </div>
 
-
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4">I bring a blend of technical proficiency and strategic thinking to cloud security and DevOps workflows. 
-                        From implementing CI/CD pipelines to strengthening security postures, my skills are tailored to meet complex, evolving digital challenges.</p>
-                    <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">AWS (EC2, S3, IAM, VPC)</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Kubernetes</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Bash Scripting</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Docker</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CloudWatch</h6>
-                                    <h6 class="font-weight-bold">75%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">GitHub Actions</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Ubuntu</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Terraform</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Graphics Design</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
-                        </li>
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>Founder & CEO</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">Sep 2025 - Present</p>
-                                    <h6 class="mb-0">ProLaunch Careers</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Founder & Trainer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">Jun 2026 - Present</p>
-                                    <h6 class="mb-0">ProLaunch Academy</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>DevOps Engineer</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">Jun 2026 - Present</p>
-                                    <h6 class="mb-0">ProLaunch Technologies</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Head of Operations</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">Sep 2024 - Present</p>
-                                    <h6 class="mb-0">Afriment</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Head of Operations</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">Apr 2026 - Present</p>
-                                    <h6 class="mb-0">NYKON</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Head of Operations</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">Jun - Present</p>
-                                    <h6 class="mb-0">Voyage Game (WONORBIT)</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>IT Support Specialist</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2022 - 2024</p>
-                                    <h6 class="mb-0">Giara Nigeria Limited</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Customer Support Manager</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2023</p>
-                                    <h6 class="mb-0">Excalet Integrated Services</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>Postgraduate Diploma in Information Technology</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2026</p>
-                                    <h6 class="mb-0">National Open University of Nigeria (NOUN)</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Cloud Security/DevOps Engineering</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2025</p>
-                                    <h6 class="mb-0">Digital Witch Training Inc.</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>BSc. in Microbiology</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2015</p>
-                                    <h6 class="mb-0">Imo State University</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear"></span> Mary-Queen Uchechukwu. All rights reserved.
         </div>
-    </div>
-    <!-- Expertise End -->
-
-
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Services</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Cloud Infrastructure Setup & Security</h4>
-                            <span>Provision, configure, and secure AWS cloud environments, ensuring compliance and scalability.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">DevOps & Docker Pipeline Implementation</h4>
-                            <span>Design and implement containerized, automated deployment pipelines for faster and more reliable software delivery.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Website Development & Cloud Deployment</h4>
-                            <span>Build, host, and secure static websites, including my own personal portfolio; designed from scratch and deployed with proper security and access controls.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Operations Leadership & Career Coaching</h4>
-                            <span>Lead multi-team operations across technology and career-development brands, and coach emerging professionals through career strategy and technical upskilling.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div style="color: var(--text-muted); font-size: 0.8rem;">
+          Designed & Deployed with <span class="neon-text">#2CFF05</span> Precision.
         </div>
+      </div>
     </div>
-    <!-- Service End -->
+  </footer>
 
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">Cloud Security</li>
-                        <li class="mx-3" data-filter=".third">Cloud & DevOps</li>
-                        <li class="mx-3" data-filter=".second">Operations & Leadership</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <!-- Replace the original img tag with this structure -->
-                    <figure>
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
-                        <figcaption class="text-center mt-2"><h5>AWS IAM Role-Based Access Control</h5></figcaption>
-                        <p class="text-center mt-2">Designed least-privilege IAM policies to enhance compliance and reduce security risks.</p>
-                    </figure>
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://tinyurl.com/pod6project1" target="_blank"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                    <figure>
-                        <img class="img-fluid" src="img/project-2.jpg" alt="">
-                        <figcaption class="text-center mt-2"><h5>Operation Cloud Mirage: Threat Simulation</h5></figcaption>
-                        <p class="text-center mt-2">Risk & threat analysis simulation for AWS-hosted infrastructure.</p>
-                    </figure>
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="" target="_blank"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <figure>
-                            <img class="img-fluid" src="img/project-3.jpg" alt="">
-                            <figcaption class="text-center mt-2"><h5>Personal Portfolio Website</h5></figcaption>
-                        <p class="text-center mt-2">Designed and built a fully responsive static website to showcase my Cloud & DevOps career portfolio using HTML, CSS, JavaScript, and AWS (S3, CloudFront, Route 53) — including a full domain hijacking recovery involving DNS cleanup and Search Console restoration.</p>
-                        </figure>
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="" target="_blank"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <figure>
-                            <img class="img-fluid" src="img/project-4.jpg" alt="">
-                            <figcaption class="text-center mt-2"><h5>LaunchIQ — AI Career Platform DevOps Build</h5></figcaption>
-                            <p class="text-center mt-2">Built full DevOps infrastructure for an AI-powered CV optimizer: Express server, multi-stage Docker builds, GitHub Actions CI/CD, Railway deployment, Prometheus/Grafana monitoring, and a Google Sheets-to-PostgreSQL (Supabase/Prisma) data migration.</p>
-                        </figure>
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="" target="_blank"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <figure>
-                            <img class="img-fluid" src="img/project-5.jpg" alt="">
-                            <figcaption class="text-center mt-2"><h5>ProLaunch Technologies Ops Hub</h5></figcaption>
-                            <p class="text-center mt-2">Built ProLaunch Technologies' AI-powered professional multi-page website</p>
-                        </figure>
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="" target="_blank"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <figure>
-                            <img class="img-fluid" src="img/project-6.jpg" alt="">
-                            <figcaption class="text-center mt-2"><h5>Voyage Game (WONORBIT) Strategy & Audit</h5></figcaption>
-                            <p class="text-center mt-2">Led operational and strategic work for a faith-based board game product, including technical site audits, competitive analysis, and Claude Project setup for the business.</p>
-                        </figure>
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="" target="_blank"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                                <div class="col-lg-4 col-md-6 portfolio-item second">
-                                    <div class="portfolio-img rounded overflow-hidden">
-                                        <img class="img-fluid" src="img/project-6.jpg" alt="">
-                                        <div class="portfolio-btn">
-                                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                -->
-            </div>
-        </div>
-    </div>
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-    <!--
-    <div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">I recommend Mary-Queen for any Cloud engineering position at your business. 
-                                She has led teams and, along with that, brings an energy and dependability that make her crucial to our joint venture. 
-                                She did an excellent job of staying up to date on software developments and thus finding new solutions. 
-                                She had the most extensive and diverse knowledge of software at our venture, and others even sought her out for advice. 
-                                A reliable and highly capable employee, I can’t recommend her highly enough.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Emmanuel Ahman</h5>
-                            <span>CEO & Lead Software Engineer, NYKON</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">It’s always a pleasure working with Mary-Queen. Her exceptional organisational skills, coupled with a keen eye for detail, 
-                                ensure every task is handled with precision. Whether managing communications, streamlining administrative processes, or handling DevOps projects. 
-                                Mary-Queen consistently delivers above expectations. Her adaptability and professionalism are second to none. I strongly recommend her.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Daniel Ayeni</h5>
-                            <span>CEO & Senior Software Engineer, AFRIMENT</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-5 fst-italic">I've had the pleasure of working alongside Mary-Queen and have consistently been impressed by her deep passion for technology and innovation. 
-                                Whether it's the latest tools, frameworks, or industry trends, Mary-Queen is always ahead of the curve and eager to share insights with the team. 
-                                Her enthusiasm is contagious and often inspires others to explore new approaches and solutions. Beyond just being a tech enthusiast, she is also a fantastic collaborator, 
-                                always willing to jump in, solve complex problems, and support team members whenever needed. It's rare to find someone who combines technical curiosity with such a positive, 
-                                team-first attitude. Any team would be lucky to have Mary Queen on board.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Chioma Obieze</h5>
-                            <span>Customer/IT Support Specialist</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-right h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="https://form.typeform.com/to/tjF3PEjZ" target="_blank">Say Hello</a>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">Based in:</p>
-                    <h3 class="fw-bold">Nigeria (Remote)</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+234 901 798 3507</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">maryqueen@prolaunchgroup.org</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://www.x.com/Kweenshaly" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/Kweenshaly" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/mary-queen-uch" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div data-tf-live="01K2M3X65NTAQ80QDCTRCJH82H"></div><script src="//embed.typeform.com/next/embed.js"></script>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Map Removed: No physical office location -->
-
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Mary-Queen Uchechukwu | ProLaunch Group</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom text-secondary" href="https://maryqueenuch.online">Mary-Queen Uchechukwu</a>
-                        <br>Deployed By: <a class="border-bottom" href="https://maryqueenuch.online" target="_blank">Mary-Queen Uchechukwu</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- Scripts -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
