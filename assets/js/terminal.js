@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="mono neon-text">cat architecture.tf</span>  - View AWS 3-Tier Terraform code sample
   <span class="mono neon-text">vpcctl --demo</span>        - Run local VPC Network Namespace simulator
   <span class="mono neon-text">status</span>                - Check live infrastructure status & uptime
+  <span class="mono neon-text">credentials</span>           - View degrees & cloud/security certifications
   <span class="mono neon-text">skills</span>                - Display cloud, DevOps & operations stack
   <span class="mono neon-text">projects</span>              - List highlighted production repositories
   <span class="mono neon-text">whoami</span>                - Profile summary of Mary-Queen Uchechukwu
@@ -82,6 +83,24 @@ document.addEventListener('DOMContentLoaded', () => {
   • <span class="neon-text">Leadership:</span>         Head of Ops @ Afriment, COO @ Nykon, Founder @ ProLaunch
 `,
 
+    credentials: () => `
+<span class="neon-text">ACADEMIC FOUNDATION & INDUSTRY CERTIFICATIONS:</span>
+
+  <span class="neon-text">[FORMAL EDUCATION]</span>
+  • <span class="neon-text">Postgraduate Diploma in Information Technology</span>
+    National Open University of Nigeria (NOUN), Abuja [Apr 2026 — Apr 2027]
+  • <span class="neon-text">Bachelor of Science in Microbiology</span>
+    Imo State University, Owerri [Sep 2011 — Sep 2015]
+
+  <span class="neon-text">[INDUSTRY CERTIFICATIONS & BADGES]</span>
+  • <span class="neon-text">AWS Cloud Practitioner Essentials</span> — Amazon Web Services [Jul 2026]
+  • <span class="neon-text">Python Essentials 2</span> — Cisco Networking Academy & Python Institute [Jun 2026]
+  • <span class="neon-text">DevOps & Cloud Security</span> — DW Support Community [Dec 2025]
+`,
+
+    certs: function() { return this.credentials(); },
+    education: function() { return this.credentials(); },
+
     projects: () => `
 <span class="neon-text">FLAGSHIP TECHNICAL REPOSITORIES & COLLABORATIONS:</span>
   1. <span class="neon-text">promohub-scalable-web-platform</span>   [PromoHub-Org] Cloud High Availability & Auto-scale
@@ -111,7 +130,11 @@ Author:     "The Silent Career Killers Nobody Talks About"
         const modal = document.getElementById('bookingModal');
         if (modal) modal.classList.add('active');
       }, 300);
-      return `<span class="neon-text">Opening Google Appointment Booking schedule modal...</span>`;
+      return `
+<span class="neon-text">APPOINTMENT SCHEDULING (GOOGLE CALENDAR):</span>
+  Opening interactive booking modal...
+  Direct Link: <a href="https://calendar.app.google/sMUvHP8bQxYBxHxE7" target="_blank" class="neon-text">calendar.app.google/sMUvHP8bQxYBxHxE7</a>
+`;
     },
 
     contact: () => `

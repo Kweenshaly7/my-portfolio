@@ -867,20 +867,26 @@ a {
 
 .project-media {
   position: relative;
-  height: 190px;
-  background: #0e1422;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  background: #080C14;
   overflow: hidden;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
+.project-thumb-img,
 .project-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
 
+.project-card:hover .project-thumb-img,
 .project-card:hover .project-media img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 /* Code Preview Fallback for Media */
@@ -1476,6 +1482,122 @@ a {
 }
 
 /* ==========================================================================
+   CREDENTIALS & FORMAL EDUCATION
+   ========================================================================== */
+.credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.credential-column {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.credential-column:hover {
+  border-color: var(--accent-neon-border);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.credential-col-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.credential-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.credential-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.credential-card:hover {
+  border-color: var(--accent-neon-border);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), var(--shadow-neon-sm);
+}
+
+.credential-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.credential-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  text-transform: uppercase;
+}
+
+.credential-badge.badge-cloud {
+  background: rgba(255, 153, 0, 0.12);
+  color: #FF9900;
+  border-color: rgba(255, 153, 0, 0.35);
+}
+
+.credential-badge.badge-code {
+  background: rgba(59, 130, 246, 0.12);
+  color: #60A5FA;
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+.credential-badge.badge-sec {
+  background: var(--accent-neon-dim);
+  color: var(--accent-neon);
+  border-color: var(--accent-neon-border);
+}
+
+.credential-period {
+  font-size: 0.78rem;
+}
+
+.credential-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.credential-institution {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.credential-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -1503,6 +1625,9 @@ a {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
@@ -1525,8 +1650,54 @@ a {
   .philosophy-grid {
     grid-template-columns: 1fr;
   }
+  .projects-filter-bar {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .projects-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 7px 14px;
+    font-size: 0.82rem;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .project-card {
+    border-radius: var(--radius-md);
+  }
+  .project-media {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 190px;
+  }
+  .project-badge-top {
+    top: 10px;
+    left: 10px;
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+  .project-content {
+    padding: 20px 18px;
+  }
+  .project-title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+  .project-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 14px;
   }
   .skills-grid {
     grid-template-columns: 1fr;
@@ -1541,3 +1712,25 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .project-media {
+    min-height: 165px;
+  }
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .project-content {
+    padding: 16px 14px;
+  }
+  .project-tags {
+    gap: 4px;
+    margin-bottom: 14px;
+  }
+  .tag-pill {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+  }
+}
+

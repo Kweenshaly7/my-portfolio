@@ -8,12 +8,26 @@
   <meta name="keywords" content="Mary-Queen Uchechukwu, Coach MQ, Cloud Engineer, DevOps Engineer, AWS, Terraform, Docker, Kubernetes, Business Operations, Afriment, ProLaunch Group">
   <meta name="author" content="Mary-Queen Uchechukwu">
 
-  <!-- Open Graph / Social Sharing -->
+  <link rel="canonical" href="https://maryqueen.prolaunchgroup.org/">
+
+  <!-- Open Graph / LinkedIn & Social Sharing -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maryqueen.prolaunchgroup.org/">
   <meta property="og:title" content="Mary-Queen Uchechukwu | Cloud/DevOps Engineer & Business Operations Leader">
-  <meta property="og:description" content="Bridging user experience, infrastructure, and operational scale. Over a decade operating at the intersection of digital infrastructure and human systems.">
-  <meta property="og:image" content="assets/img/new-profile.png">
+  <meta property="og:description" content="Bridging user experience, infrastructure, and operational scale. Cloud & DevOps Engineer, Systems Strategist, and Business Operations Leader.">
+  <meta property="og:image" content="https://maryqueen.prolaunchgroup.org/assets/img/og-preview.png">
+  <meta property="og:image:secure_url" content="https://maryqueen.prolaunchgroup.org/assets/img/og-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mary-Queen Uchechukwu - Cloud/DevOps Engineer & Business Operations Leader">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://maryqueen.prolaunchgroup.org/">
+  <meta name="twitter:title" content="Mary-Queen Uchechukwu | Cloud/DevOps Engineer & Business Operations Leader">
+  <meta name="twitter:description" content="Bridging user experience, infrastructure, and operational scale. Architecting scalable, resilient environments.">
+  <meta name="twitter:image" content="https://maryqueen.prolaunchgroup.org/assets/img/og-preview.png">
   <meta name="twitter:creator" content="@kweenshaly">
 
   <!-- SVG Favicon with Brand Accent -->
@@ -34,12 +48,12 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#philosophy" class="nav-link">Dual Philosophy</a></li>
-        <li><a href="#terminal" class="nav-link">Cloud Console</a></li>
+        <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+        <li><a href="#terminal" class="nav-link">Console</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#skills" class="nav-link">Stacks</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#credentials" class="nav-link">Credentials</a></li>
         <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -59,11 +73,12 @@
   <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
     <a href="#hero" class="nav-link">Home</a>
-    <a href="#philosophy" class="nav-link">Dual Philosophy</a>
-    <a href="#terminal" class="nav-link">Cloud Console</a>
+    <a href="#philosophy" class="nav-link">Philosophy</a>
+    <a href="#terminal" class="nav-link">Console</a>
     <a href="#projects" class="nav-link">Featured Projects</a>
     <a href="#skills" class="nav-link">Technical Toolchain</a>
     <a href="#experience" class="nav-link">Career Journey</a>
+    <a href="#credentials" class="nav-link">Credentials & Education</a>
     <a href="#testimonials" class="nav-link">Testimonials</a>
     <a href="#contact" class="nav-link">Contact & Book</a>
     <button class="btn btn-primary open-booking-modal" style="margin-top: 16px;">Schedule Appointment</button>
@@ -180,6 +195,7 @@
             <button class="chip-btn" data-cmd="cat architecture.tf">cat architecture.tf</button>
             <button class="chip-btn" data-cmd="vpcctl --demo">vpcctl --demo</button>
             <button class="chip-cmd chip-btn" data-cmd="status">status</button>
+            <button class="chip-btn" data-cmd="credentials">credentials</button>
             <button class="chip-btn" data-cmd="skills">skills</button>
             <button class="chip-btn" data-cmd="projects">projects</button>
             <button class="chip-btn" data-cmd="clear">clear</button>
@@ -324,12 +340,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 1. PromoHub — Scalable Cloud Web Platform -->
         <div class="project-card" data-category="cloud org platform">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// PromoHub Cloud Architecture</span>
-              <span>services: [load-balancer, api-cluster, db]</span>
-              <span>Traffic Surge Simulation: 50,000 req/s &bull; Auto-scale</span>
-              <span class="neon-text">High Availability • Zero Outage</span>
-            </div>
+            <img src="assets/img/projects/project-promohub.png" alt="PromoHub Scalable Cloud Web Platform" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Cloud Collaboration</span>
           </div>
           <div class="project-content">
@@ -357,12 +368,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 2. AWS Three-Tier Terraform Deployment -->
         <div class="project-card" data-category="cloud systems">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// terraform-eks-db</span>
-              <span>module "vpc" { cidr = "10.0.0.0/16" }</span>
-              <span>module "eks" { cluster = "prod-eks" }</span>
-              <span>module "rds" { engine = "postgres" }</span>
-            </div>
+            <img src="assets/img/projects/project-aws-terraform.png" alt="AWS Three-Tier Terraform Deployment" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Terraform IaC</span>
           </div>
           <div class="project-content">
@@ -390,12 +396,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 3. Cloud VPC Simulator -->
         <div class="project-card" data-category="cloud systems">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text"># vpcctl.py (Linux NetNS)</span>
-              <span>$ sudo ./vpcctl.py create --cidr 10.10.0.0/16</span>
-              <span>$ sudo iptables -t nat -A POSTROUTING ...</span>
-              <span class="neon-text">✓ Isolated Namespace Verified</span>
-            </div>
+            <img src="assets/img/projects/project-vpc-simulator.png" alt="Cloud VPC Simulator" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Linux Primitives</span>
           </div>
           <div class="project-content">
@@ -420,15 +421,10 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
           </div>
         </div>
 
-        <!-- 4. LaunchIQ - AI ATS CV Optimizer -->
+        <!-- 4. LaunchIQ — AI ATS CV Optimizer -->
         <div class="project-card" data-category="platform cloud">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// LaunchIQ ATS AI Engine</span>
-              <span>POST /api/optimize-cv HTTP/1.1</span>
-              <span>Docker Multi-Stage Build &bull; Railway CD</span>
-              <span>Supabase / Prisma PostgreSQL</span>
-            </div>
+            <img src="assets/img/projects/project-cv-optimizer.png" alt="LaunchIQ AI ATS CV Optimizer" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">AI Full-Stack</span>
           </div>
           <div class="project-content">
@@ -456,12 +452,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 5. Docker & Linux Systems Lab -->
         <div class="project-card" data-category="cloud systems">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">$ docker stats --all</span>
-              <span>CONTAINER ID   NAME     CPU %   MEM USAGE</span>
-              <span>a1b2c3d4e5f6   nginx    0.05%   14.2MiB</span>
-              <span class="neon-text">Container Isolation & Monitoring Lab</span>
-            </div>
+            <img src="assets/img/projects/project-docker-linux.png" alt="Docker & Linux Infrastructure Lab" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Containers</span>
           </div>
           <div class="project-content">
@@ -489,12 +480,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 6. ALX System Engineering & DevOps Automation -->
         <div class="project-card" data-category="cloud systems">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">#!/usr/bin/env bash</span>
-              <span># Automated HAProxy SSL load balancing</span>
-              <span>apt-get update && apt-get -y install haproxy</span>
-              <span class="neon-text">Automated Server Health Check: 200 OK</span>
-            </div>
+            <img src="assets/img/projects/project-systems-devops.png" alt="Systems Engineering & DevOps Automation" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Systems & Bash</span>
           </div>
           <div class="project-content">
@@ -522,12 +508,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 7. ProLaunch Technologies Web & Cloud Platform -->
         <div class="project-card" data-category="org platform cloud">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// ProLaunch Technologies Web Platform</span>
-              <span>Cloud Infrastructure Architecture Services</span>
-              <span>CI/CD Automation Pipelines &bull; DevOps Consulting</span>
-              <span class="neon-text">Production High-Performance Deployment</span>
-            </div>
+            <img src="assets/img/projects/project-ptech.png" alt="ProLaunch Technologies Web Platform" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Cloud Enterprise</span>
           </div>
           <div class="project-content">
@@ -554,12 +535,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 8. ProLaunch Academy Web Platform -->
         <div class="project-card" data-category="org platform">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// ProLaunch Academy Platform</span>
-              <span>Practical Digital Tech Skills Training</span>
-              <span>Live Bootcamps &bull; Certification Tracks</span>
-              <span class="neon-text">Curriculum UI & Mobile-First Design</span>
-            </div>
+            <img src="assets/img/projects/project-pacad.png" alt="ProLaunch Academy Web Platform" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">EdTech Platform</span>
           </div>
           <div class="project-content">
@@ -586,12 +562,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 9. ProLaunch Careers Platform -->
         <div class="project-card" data-category="org platform">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// ProLaunch Careers Platform</span>
-              <span>Career Grooming Camp &bull; 10 Live Sessions</span>
-              <span>CV Optimization &bull; 30-60-90 Action Plans</span>
-              <span class="neon-text">Offer-Ready Talent Pipeline</span>
-            </div>
+            <img src="assets/img/projects/project-pcareers.png" alt="ProLaunch Careers Web Platform" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Talent Pipeline</span>
           </div>
           <div class="project-content">
@@ -618,12 +589,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <!-- 10. ProLaunch Group Parent Platform -->
         <div class="project-card" data-category="org platform">
           <div class="project-media">
-            <div class="project-code-art">
-              <span class="neon-text">// ProLaunch Group Parent Umbrella</span>
-              <span>Technologies &bull; Careers &bull; Academy</span>
-              <span>Unified Navigation & Multi-Brand Architecture</span>
-              <span class="neon-text">Cloud & Operations Ecosystem</span>
-            </div>
+            <img src="assets/img/projects/project-pgroup.png" alt="ProLaunch Group Parent Platform" class="project-thumb-img" loading="lazy">
             <span class="project-badge-top">Parent Umbrella</span>
           </div>
           <div class="project-content">
@@ -869,6 +835,128 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
   </section>
 
   <!-- ==========================================================================
+       CREDENTIALS & FORMAL EDUCATION
+       ========================================================================== -->
+  <section class="section" id="credentials">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">// QUALIFICATIONS & VERIFIED SKILLS</div>
+        <h2 class="section-title">Credentials & Education</h2>
+        <p class="section-subtitle">
+          Academic foundation combined with continuous professional certifications across Cloud Architecture, DevOps, and Systems Programming.
+        </p>
+      </div>
+
+      <div class="credentials-grid">
+        <!-- Track 1: Formal Education -->
+        <div class="credential-column">
+          <div class="credential-col-header">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div>
+              <span class="pillar-tagline">ACADEMIC FOUNDATION</span>
+              <h3 style="font-size: 1.3rem;">Formal Education</h3>
+            </div>
+          </div>
+
+          <div class="credential-card-list">
+            <!-- Degree 1: PGD IT -->
+            <div class="credential-card">
+              <div class="credential-card-top">
+                <span class="credential-badge">Postgraduate</span>
+                <span class="mono neon-text credential-period">Apr 2026 — Apr 2027</span>
+              </div>
+              <h4 class="credential-title">Postgraduate Diploma in Information Technology</h4>
+              <p class="credential-institution">National Open University of Nigeria, Abuja</p>
+              <div class="credential-tags">
+                <span class="tag-pill">Information Systems</span>
+                <span class="tag-pill">Computer Networks</span>
+                <span class="tag-pill">Cloud Systems</span>
+              </div>
+            </div>
+
+            <!-- Degree 2: BSc Microbiology -->
+            <div class="credential-card">
+              <div class="credential-card-top">
+                <span class="credential-badge">Undergraduate</span>
+                <span class="mono neon-text credential-period">Sep 2011 — Sep 2015</span>
+              </div>
+              <h4 class="credential-title">Bachelor of Science in Microbiology</h4>
+              <p class="credential-institution">Imo State University, Owerri</p>
+              <div class="credential-tags">
+                <span class="tag-pill">Systems Biology</span>
+                <span class="tag-pill">Scientific Research</span>
+                <span class="tag-pill">Analytical Thinking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track 2: Industry Certifications -->
+        <div class="credential-column">
+          <div class="credential-col-header">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <span class="pillar-tagline">INDUSTRY ACCREDITATIONS</span>
+              <h3 style="font-size: 1.3rem;">Certifications & Badges</h3>
+            </div>
+          </div>
+
+          <div class="credential-card-list">
+            <!-- Cert 1: AWS -->
+            <div class="credential-card">
+              <div class="credential-card-top">
+                <span class="credential-badge badge-cloud">AWS Verified</span>
+                <span class="mono neon-text credential-period">Jul 2026</span>
+              </div>
+              <h4 class="credential-title">AWS Cloud Practitioner Essentials</h4>
+              <p class="credential-institution">Amazon Web Services (AWS)</p>
+              <div class="credential-tags">
+                <span class="tag-pill">Cloud Economics</span>
+                <span class="tag-pill">AWS Core Services</span>
+                <span class="tag-pill">Security & Compliance</span>
+              </div>
+            </div>
+
+            <!-- Cert 2: Python Essentials 2 -->
+            <div class="credential-card">
+              <div class="credential-card-top">
+                <span class="credential-badge badge-code">Programming</span>
+                <span class="mono neon-text credential-period">Jun 2026</span>
+              </div>
+              <h4 class="credential-title">Python Essentials 2</h4>
+              <p class="credential-institution">Cisco Networking Academy & Python Institute</p>
+              <div class="credential-tags">
+                <span class="tag-pill">OOP Architecture</span>
+                <span class="tag-pill">Data Structures</span>
+                <span class="tag-pill">Package Management</span>
+              </div>
+            </div>
+
+            <!-- Cert 3: DevOps & Cloud Security -->
+            <div class="credential-card">
+              <div class="credential-card-top">
+                <span class="credential-badge badge-sec">DevOps & Security</span>
+                <span class="mono neon-text credential-period">Dec 2025</span>
+              </div>
+              <h4 class="credential-title">DevOps & Cloud Security Certification</h4>
+              <p class="credential-institution">DW Support Community</p>
+              <div class="credential-tags">
+                <span class="tag-pill">CI/CD Automation</span>
+                <span class="tag-pill">Cloud Infrastructure</span>
+                <span class="tag-pill">Container Security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
        PRESERVED CLIENT & EXECUTIVE TESTIMONIALS
        ========================================================================== -->
   <section class="section" id="testimonials">
@@ -1035,7 +1123,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
           <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
             <button class="btn btn-primary open-booking-modal" style="width: 100%;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-              Open Google Appointment Schedule
+              Book an Appointment
             </button>
           </div>
 
@@ -1092,10 +1180,10 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
     <div class="modal-content">
       <button class="modal-close" id="modalClose">&times;</button>
       <div style="margin-bottom: 20px;">
-        <span class="section-tag" style="margin-bottom: 8px;">GOOGLE APPOINTMENT SCHEDULE</span>
+        <span class="section-tag" style="margin-bottom: 8px;">APPOINTMENT SCHEDULE</span>
         <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Book a 1:1 Consultation</h3>
         <p style="color: var(--text-secondary); font-size: 0.95rem;">
-          Schedule an executive session with Mary-Queen Uchechukwu directly on Google Calendar.
+          Schedule an executive session with Mary-Queen (Coach MQ) Uchechukwu directly on Google Calendar.
         </p>
       </div>
 
@@ -1103,19 +1191,19 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
         <h5 style="color: var(--accent-neon); margin-bottom: 8px; font-size: 0.95rem;">Appointment Details:</h5>
         <ul style="color: var(--text-secondary); font-size: 0.88rem; list-style: none; display: flex; flex-direction: column; gap: 8px;">
           <li>• <strong>Duration:</strong> 30 min or 60 min session</li>
-          <li>• <strong>Topics:</strong> Cloud Architecture, Terraform Review, DevOps CI/CD, Operational Strategy, or Career Coaching</li>
+          <li>• <strong>Topics:</strong> Cloud Architecture, CV/Resume Review, Career Coaching, DevOps CI/CD, Operational Strategy</li>
           <li>• <strong>Platform:</strong> Google Meet (automatic calendar invite sent upon booking)</li>
         </ul>
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 12px;">
         <!-- Primary Google Calendar Button -->
-        <a href="https://calendar.google.com" target="_blank" class="btn btn-primary" id="googleCalBtn">
+        <a href="https://calendar.app.google/sMUvHP8bQxYBxHxE7" target="_blank" class="btn btn-primary" id="googleCalBtn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Open Google Appointment Booking Page
+          Book via Google Calendar
         </a>
         <a href="mailto:maryqueen.cloud@gmail.com?subject=Schedule%20Consultation%20with%20Mary-Queen" class="btn btn-secondary">
-          Request Custom Meeting Time via Email
+          Request Custom Meeting
         </a>
       </div>
     </div>
@@ -1128,7 +1216,7 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
     <div class="container">
       <div class="footer-top">
         <a href="#hero" class="brand-logo">
-          <span>MQ<span class="neon-text">.cloud</span>_</span>
+          <span>Mary-Queen <span class="neon-text">UCHECHUKWU</span>_</span>
         </a>
 
         <div class="footer-status-pill">
@@ -1140,9 +1228,6 @@ Type <span class="neon-text neon-underline">help</span> or click any command chi
       <div class="footer-bottom">
         <div>
           &copy; <span id="currentYear"></span> Mary-Queen Uchechukwu. All rights reserved.
-        </div>
-        <div style="color: var(--text-muted); font-size: 0.8rem;">
-          Designed & Deployed with <span class="neon-text">#2CFF05</span> Precision.
         </div>
       </div>
     </div>
