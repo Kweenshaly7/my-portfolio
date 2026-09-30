@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="mono neon-text">credentials</span>           - View degrees & cloud/security certifications
   <span class="mono neon-text">skills</span>                - Display cloud, DevOps & operations stack
   <span class="mono neon-text">projects</span>              - List highlighted production repositories
+  <span class="mono neon-text">books</span>                 - View published e-books & playbooks
   <span class="mono neon-text">whoami</span>                - Profile summary of Mary-Queen Uchechukwu
   <span class="mono neon-text">book</span>                  - Open Google Appointment Booking schedule
   <span class="mono neon-text">contact</span>               - Display direct communication channels
@@ -120,10 +121,23 @@ document.addEventListener('DOMContentLoaded', () => {
 <span class="neon-text">Mary-Queen Uchechukwu (Coach MQ)</span>
 Role:       Cloud Operations Engineer & Business Operations Leader
 Mission:    Bridging user experience, cloud infrastructure, and operational scale.
-Impact:     Scaled community from 0 to 50k+; generated ₦5M+ ARR; engineered 99.9% uptime architectures.
+Impact:     Scaled community from 0 to 50k+; generated ₦35M+ ARR; engineered 99.9% uptime architectures.
 Founder:    ProLaunch Group (Technologies, Careers, Academy)
-Author:     "The Silent Career Killers Nobody Talks About"
+Author:     "The Silent Career Killers Nobody Talks About" & "The AI Automation Playbook"
 `,
+
+    books: () => `
+<span class="neon-text">PUBLISHED E-BOOKS BY COACH MQ:</span>
+  1. <span class="neon-text">The Silent Career Killers Nobody Talks About</span>
+     Format: EPUB / PDF / MOBI / TXT
+     Get on Selar: <a href="https://selar.com/85n8931439" target="_blank" class="neon-text">selar.com/85n8931439</a>
+
+  2. <span class="neon-text">The AI Automation Playbook: The Foundations They Don't Teach You</span>
+     Series: Foundation Series • Vol. I
+     Tools: ChatGPT, Make, Zapier, Notion, Airtable, Slack
+     Get on Coachli: <a href="https://coachli.co/coach-mq/PR-09313f81ba" target="_blank" class="neon-text">coachli.co/coach-mq/PR-09313f81ba</a>
+`,
+    ebooks: function() { return this.books(); },
 
     book: () => {
       setTimeout(() => {
