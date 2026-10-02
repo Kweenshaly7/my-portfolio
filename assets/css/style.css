@@ -262,16 +262,19 @@ a {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(7, 9, 14, 0.82);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: #080B10;
+  background: rgba(8, 11, 16, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-subtle);
-  transition: var(--transition);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.scrolled {
-  border-bottom-color: rgba(44, 255, 5, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: #07090e;
+  background: rgba(7, 9, 14, 0.98);
+  border-bottom: 1px solid var(--accent-neon-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85), 0 1px 0 rgba(44, 255, 5, 0.25);
 }
 
 .nav-container {
@@ -286,9 +289,12 @@ a {
   align-items: center;
   gap: 10px;
   font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: 1.15rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .brand-badge {
@@ -304,16 +310,19 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: clamp(10px, 1.3vw, 22px);
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 500;
+  letter-spacing: 0.01em;
   color: var(--text-secondary);
   position: relative;
-  padding: 6px 0;
+  padding: 6px 2px;
+  white-space: nowrap;
+  transition: var(--transition);
 }
 
 .nav-link:hover, .nav-link.active {
@@ -1414,28 +1423,60 @@ a {
   align-items: center;
 }
 
-/* Mentorship Banner */
+/* Mentorship Banner with CGC Thumbnail */
 .mentorship-banner {
   background: linear-gradient(135deg, rgba(16, 24, 38, 0.95) 0%, rgba(9, 13, 20, 0.98) 100%);
   border: 1px solid var(--border-glass);
   border-left: 4px solid var(--accent-neon);
   border-radius: var(--radius-lg);
-  padding: 36px 40px;
+  padding: 32px 36px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 36px;
+  gap: 32px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+}
+
+.mentorship-banner:hover {
+  border-color: var(--accent-neon-border);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), var(--shadow-neon-sm);
+}
+
+.mentorship-media {
+  width: 250px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #040609;
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.mentorship-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.mentorship-banner:hover .mentorship-thumb-img {
+  transform: scale(1.04);
 }
 
 .mentorship-content {
   flex: 1;
+  min-width: 0;
 }
 
 .mentorship-action {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 /* ==========================================================================
@@ -1821,11 +1862,18 @@ a {
     gap: 24px;
     padding: 32px 28px;
   }
+  .mentorship-media {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    aspect-ratio: 1455 / 556;
+  }
   .mentorship-action {
     width: 100%;
   }
   .mentorship-action .btn {
     width: 100%;
+    justify-content: center;
   }
 }
 
@@ -1837,7 +1885,7 @@ a {
     padding: 70px 0;
   }
   .brand-logo {
-    font-size: clamp(0.95rem, 3.8vw, 1.15rem);
+    font-size: clamp(1.1rem, 4.2vw, 1.35rem);
   }
   .nav-links, .nav-actions .btn {
     display: none;
@@ -1993,6 +2041,12 @@ a {
   .mentorship-banner {
     padding: 24px 20px;
     gap: 20px;
+  }
+  .mentorship-media {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1455 / 556;
   }
 }
 

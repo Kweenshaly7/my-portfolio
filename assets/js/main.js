@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileDrawer = document.getElementById('mobileDrawer');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
+    if (window.scrollY > 15) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
